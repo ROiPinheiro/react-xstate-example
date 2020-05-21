@@ -1,5 +1,6 @@
 {
   "name": "react-xstate-example",
+  "homepage": "https://roipinheiro.github.io/react-xstate-example/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,6 +9,7 @@
     "@testing-library/user-event": "^7.1.2",
     "@xstate/react": "^0.8.1",
     "framer-motion": "^1.11.0",
+    "gh-pages": "^2.2.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
@@ -15,6 +17,8 @@
     "xstate": "^4.9.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
